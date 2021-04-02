@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px auto;
+}
+.wrapper {
+    width: 324px;
+    min-height: 350px;
+    padding: 10px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+.wrapper h3 {
+    margin-left: 8px;
+}
+.wrapper p {
+    padding:10px;
+    margin-top: 10px;
+}
+.wrapper input {
+    margin-left: 80px;
+}
+select {
+    margin-left: 55px;
+    width: 145px;
+}
+.lastform select {
+    margin-left: 27px
+}
+textarea {
+    height: 80px;
+    width: 302px;
+    margin-left: 10px;
+    resize: none;
+}
+button {
+    margin-left: 264px;
+    margin-top: 17px;
+    background-color: rgb(103, 162, 199);
+    box-shadow: 2px 2px;
+    color: white;
+}

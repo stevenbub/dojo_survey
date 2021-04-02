@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+</head>
+<body>
+    <div class="wrapper">
+        <h3>This is my survey app</h3>
+        <form action="/create_user" method="POST">
+        {% csrf_token %}
+        <p>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            Dojo Location:
+            <select name="location">
+                <option value="San Jose">San Jose</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Denver">Denver</option>
+            </select>
+        </p>
+        <div class="lastform">
+        <p>
+            Favorite Language:
+            <select name="language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+            </select>
+        </p>
+        </div>
+        <p>Comment (optional):</p>
+        <textarea name="description"></textarea>
+        <button type="submit">Button</button>
+    </form>
+    </div>
+</body>
+</html>

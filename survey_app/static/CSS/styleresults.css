@@ -1,0 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px auto;
+}
+.wrapper {
+    width: 324px;
+    min-height: 350px;
+    padding: 10px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
